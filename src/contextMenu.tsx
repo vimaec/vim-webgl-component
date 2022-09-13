@@ -91,7 +91,7 @@ export function VimContextMenu(
 
   const createButton = (label: string, keyboard: string, action:(e:ClickCallback) => void, condition: boolean = true) =>{
     if(!condition) return null
-    return <MenuItem className="hover:bg-gray-lightest px-5 py-2 flex items-center justify-between" onClick={action} >
+    return <MenuItem className="hover:bg-gray-lightest px-5 py-2 flex items-center justify-between cursor-pointer select-none" onClick={action} >
       <span>{label}</span><span className="text-gray-medium">{keyboard}</span>
     </MenuItem>
   }
