@@ -21,7 +21,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">BimTreeData</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L43">src/bim/bimTreeData.ts:43</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L59">src/bim/bimTreeData.ts:59</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -43,8 +43,10 @@
 <a href="viw_webgl_component.BimTreeData.html#getChildren" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Children</span></a>
 <a href="viw_webgl_component.BimTreeData.html#getLeafs" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Leafs</span></a>
 <a href="viw_webgl_component.BimTreeData.html#getNodeFromElement" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Node<wbr/>From<wbr/>Element</span></a>
+<a href="viw_webgl_component.BimTreeData.html#getParent" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Parent</span></a>
 <a href="viw_webgl_component.BimTreeData.html#getRange" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Range</span></a>
 <a href="viw_webgl_component.BimTreeData.html#getSelection" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Selection</span></a>
+<a href="viw_webgl_component.BimTreeData.html#getSiblings" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Siblings</span></a>
 <a href="viw_webgl_component.BimTreeData.html#updateVisibility" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>update<wbr/>Visibility</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -52,28 +54,28 @@
 <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_BimTreeData">new <wbr/>Bim<wbr/>Tree<wbr/>Data<span class="tsd-signature-symbol">(</span>map<span class="tsd-signature-symbol">: </span><a href="../types/data.MapTree.html" class="tsd-signature-type" data-tsd-kind="Type alias">MapTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ElementInfo</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="viw_webgl_component.BimTreeData.html" class="tsd-signature-type" data-tsd-kind="Class">BimTreeData</a><a href="#constructor.new_BimTreeData" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_BimTreeData">new <wbr/>Bim<wbr/>Tree<wbr/>Data<span class="tsd-signature-symbol">(</span>map<span class="tsd-signature-symbol">: </span><a href="../types/data.MapTree.html" class="tsd-signature-type" data-tsd-kind="Type alias">MapTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../types/helpers_element.AugmentedElement.html" class="tsd-signature-type" data-tsd-kind="Type alias">AugmentedElement</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="viw_webgl_component.BimTreeData.html" class="tsd-signature-type" data-tsd-kind="Class">BimTreeData</a><a href="#constructor.new_BimTreeData" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>map: <a href="../types/data.MapTree.html" class="tsd-signature-type" data-tsd-kind="Type alias">MapTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ElementInfo</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h5>map: <a href="../types/data.MapTree.html" class="tsd-signature-type" data-tsd-kind="Type alias">MapTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../types/helpers_element.AugmentedElement.html" class="tsd-signature-type" data-tsd-kind="Type alias">AugmentedElement</a><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="viw_webgl_component.BimTreeData.html" class="tsd-signature-type" data-tsd-kind="Class">BimTreeData</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L47">src/bim/bimTreeData.ts:47</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L63">src/bim/bimTreeData.ts:63</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="elementToNode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>element<wbr/>To<wbr/>Node</span><a href="#elementToNode" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">element<wbr/>To<wbr/>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L45">src/bim/bimTreeData.ts:45</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L61">src/bim/bimTreeData.ts:61</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="nodes" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>nodes</span><a href="#nodes" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="../types/viw_webgl_component.VimTreeNode.html" class="tsd-signature-type" data-tsd-kind="Type alias">VimTreeNode</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L44">src/bim/bimTreeData.ts:44</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L60">src/bim/bimTreeData.ts:60</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="countPredicate" class="tsd-anchor"></a>
@@ -101,7 +103,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4></li></ul></li></ul></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">&quot;all&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;none&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;some&quot;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L117">src/bim/bimTreeData.ts:117</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L133">src/bim/bimTreeData.ts:133</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getAncestors" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Ancestors</span><a href="#getAncestors" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -114,11 +116,11 @@
 <h5>node: <span class="tsd-signature-type">number</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L147">src/bim/bimTreeData.ts:147</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L181">src/bim/bimTreeData.ts:181</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getChildren" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Children</span><a href="#getChildren" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="getChildren.getChildren-1">get<wbr/>Children<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, recusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, result<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><a href="#getChildren.getChildren-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getChildren.getChildren-1">get<wbr/>Children<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, includeSelf<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, recursive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, result<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><a href="#getChildren.getChildren-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -126,12 +128,14 @@
 <li>
 <h5>node: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5>recusive: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5></li>
+<h5>includeSelf: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5></li>
+<li>
+<h5>recursive: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5></li>
 <li>
 <h5>result: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L132">src/bim/bimTreeData.ts:132</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L148">src/bim/bimTreeData.ts:148</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getLeafs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Leafs</span><a href="#getLeafs" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -146,7 +150,7 @@
 <h5>result: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L102">src/bim/bimTreeData.ts:102</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L118">src/bim/bimTreeData.ts:118</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getNodeFromElement" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Node<wbr/>From<wbr/>Element</span><a href="#getNodeFromElement" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -159,7 +163,20 @@
 <h5>element: <span class="tsd-signature-type">number</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L98">src/bim/bimTreeData.ts:98</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L114">src/bim/bimTreeData.ts:114</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getParent" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Parent</span><a href="#getParent" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="getParent.getParent-1">get<wbr/>Parent<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#getParent.getParent-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>node: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L170">src/bim/bimTreeData.ts:170</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getRange" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Range</span><a href="#getRange" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -174,7 +191,7 @@
 <h5>end: <span class="tsd-signature-type">number</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L87">src/bim/bimTreeData.ts:87</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L103">src/bim/bimTreeData.ts:103</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getSelection" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Selection</span><a href="#getSelection" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -187,20 +204,33 @@
 <h5>elements: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L112">src/bim/bimTreeData.ts:112</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="updateVisibility" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>update<wbr/>Visibility</span><a href="#updateVisibility" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L128">src/bim/bimTreeData.ts:128</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getSiblings" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Siblings</span><a href="#getSiblings" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="updateVisibility.updateVisibility-1">update<wbr/>Visibility<span class="tsd-signature-symbol">(</span>viewer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Viewer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#updateVisibility.updateVisibility-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getSiblings.getSiblings-1">get<wbr/>Siblings<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><a href="#getSiblings.getSiblings-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>viewer: <span class="tsd-signature-type">Viewer</span></h5></li></ul></div>
+<h5>node: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L175">src/bim/bimTreeData.ts:175</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="updateVisibility" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>update<wbr/>Visibility</span><a href="#updateVisibility" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="updateVisibility.updateVisibility-1">update<wbr/>Visibility<span class="tsd-signature-symbol">(</span>vim<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vim</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#updateVisibility.updateVisibility-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>vim: <span class="tsd-signature-type">Vim</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/bim/bimTreeData.ts#L54">src/bim/bimTreeData.ts:54</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/bim/bimTreeData.ts#L70">src/bim/bimTreeData.ts:70</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -219,8 +249,14 @@
 <ul>
 <li class="current"><a href="../modules.html">vim-<wbr/>webgl-<wbr/>component</a>
 <ul>
+<li class="tsd-kind-module"><a href="../modules/container.html">container</a></li>
 <li class="tsd-kind-module"><a href="../modules/data.html">data</a></li>
+<li class="tsd-kind-module"><a href="../modules/helpers_element.html">helpers/element</a></li>
 <li class="tsd-kind-module"><a href="../modules/icons.html">icons</a></li>
+<li class="tsd-kind-module"><a href="../modules/panels_logo.html">panels/logo</a></li>
+<li class="tsd-kind-module"><a href="../modules/performance.html">performance</a></li>
+<li class="tsd-kind-module"><a href="../modules/viewerState.html">viewer<wbr/>State</a></li>
+<li class="tsd-kind-module"><a href="../modules/vimComponentRef.html">vim<wbr/>Component<wbr/>Ref</a></li>
 <li class="current tsd-kind-module"><a href="../modules/viw_webgl_component.html">viw-<wbr/>webgl-<wbr/>component</a></li></ul></li></ul></div></details></nav>
 <nav class="tsd-navigation secondary menu-sticky">
 <ul>
@@ -234,8 +270,10 @@
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.BimTreeData.html#getChildren" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Children</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.BimTreeData.html#getLeafs" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Leafs</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.BimTreeData.html#getNodeFromElement" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Node<wbr/>From<wbr/>Element</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.BimTreeData.html#getParent" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Parent</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.BimTreeData.html#getRange" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Range</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.BimTreeData.html#getSelection" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Selection</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.BimTreeData.html#getSiblings" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Siblings</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.BimTreeData.html#updateVisibility" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>update<wbr/>Visibility</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
