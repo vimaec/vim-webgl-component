@@ -24,7 +24,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">Isolation</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L16">src/helpers/isolation.ts:16</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L15">src/helpers/isolation.ts:15</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -43,9 +43,12 @@
 <div class="tsd-index-list"><a href="viw_webgl_component.Isolation.html#any" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>any</span></a>
 <a href="viw_webgl_component.Isolation.html#applySettings" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>apply<wbr/>Settings</span></a>
 <a href="viw_webgl_component.Isolation.html#clear" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>clear</span></a>
+<a href="viw_webgl_component.Isolation.html#clearReferences" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>clear<wbr/>References</span></a>
 <a href="viw_webgl_component.Isolation.html#current" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>current</span></a>
+<a href="viw_webgl_component.Isolation.html#getReference" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Reference</span></a>
 <a href="viw_webgl_component.Isolation.html#hide" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>hide</span></a>
 <a href="viw_webgl_component.Isolation.html#isolate" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>isolate</span></a>
+<a href="viw_webgl_component.Isolation.html#setReference" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>set<wbr/>Reference</span></a>
 <a href="viw_webgl_component.Isolation.html#show" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>show</span></a>
 <a href="viw_webgl_component.Isolation.html#toggleIsolation" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>toggle<wbr/>Isolation</span></a>
 </div></section></div></details></section></section>
@@ -54,18 +57,20 @@
 <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_Isolation">new <wbr/>Isolation<span class="tsd-signature-symbol">(</span>componentViewer<span class="tsd-signature-symbol">: </span><a href="viw_webgl_component.ViewerWrapper.html" class="tsd-signature-type" data-tsd-kind="Class">ViewerWrapper</a>, settings<span class="tsd-signature-symbol">: </span><a href="../types/viw_webgl_component.Settings.html" class="tsd-signature-type" data-tsd-kind="Type alias">Settings</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="viw_webgl_component.Isolation.html" class="tsd-signature-type" data-tsd-kind="Class">Isolation</a><a href="#constructor.new_Isolation" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_Isolation">new <wbr/>Isolation<span class="tsd-signature-symbol">(</span>viewer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Viewer</span>, camera<span class="tsd-signature-symbol">: </span><a href="viw_webgl_component.ComponentCamera.html" class="tsd-signature-type" data-tsd-kind="Class">ComponentCamera</a>, settings<span class="tsd-signature-symbol">: </span><a href="../types/viw_webgl_component.Settings.html" class="tsd-signature-type" data-tsd-kind="Type alias">Settings</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="viw_webgl_component.Isolation.html" class="tsd-signature-type" data-tsd-kind="Class">Isolation</a><a href="#constructor.new_Isolation" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>componentViewer: <a href="viw_webgl_component.ViewerWrapper.html" class="tsd-signature-type" data-tsd-kind="Class">ViewerWrapper</a></h5></li>
+<h5>viewer: <span class="tsd-signature-type">Viewer</span></h5></li>
+<li>
+<h5>camera: <a href="viw_webgl_component.ComponentCamera.html" class="tsd-signature-type" data-tsd-kind="Class">ComponentCamera</a></h5></li>
 <li>
 <h5>settings: <a href="../types/viw_webgl_component.Settings.html" class="tsd-signature-type" data-tsd-kind="Type alias">Settings</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="viw_webgl_component.Isolation.html" class="tsd-signature-type" data-tsd-kind="Class">Isolation</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L31">src/helpers/isolation.ts:31</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L31">src/helpers/isolation.ts:31</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="onChanged" class="tsd-anchor"></a>
@@ -77,7 +82,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ISimpleEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L27">src/helpers/isolation.ts:27</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L27">src/helpers/isolation.ts:27</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="any" class="tsd-anchor"></a>
@@ -86,101 +91,173 @@
 <li class="tsd-signature tsd-anchor-link" id="any.any-1">any<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#any.any-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Returns true if there are currently objects isolated.</p>
+
+<h3>Returns</h3><p>True if there are currently objects isolated; otherwise, false.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L54">src/helpers/isolation.ts:54</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L83">src/helpers/isolation.ts:83</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="applySettings" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>apply<wbr/>Settings</span><a href="#applySettings" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="applySettings.applySettings-1">apply<wbr/>Settings<span class="tsd-signature-symbol">(</span>settings<span class="tsd-signature-symbol">: </span><a href="../types/viw_webgl_component.Settings.html" class="tsd-signature-type" data-tsd-kind="Type alias">Settings</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#applySettings.applySettings-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Applies relevent settings to isolation.</p>
+<div class="tsd-comment tsd-typography"><p>Applies relevant settings to isolation.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>settings: <a href="../types/viw_webgl_component.Settings.html" class="tsd-signature-type" data-tsd-kind="Type alias">Settings</a></h5></li></ul></div>
+<h5>settings: <a href="../types/viw_webgl_component.Settings.html" class="tsd-signature-type" data-tsd-kind="Type alias">Settings</a></h5>
+<div class="tsd-comment tsd-typography"><p>The settings to be applied to isolation.</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L40">src/helpers/isolation.ts:40</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L41">src/helpers/isolation.ts:41</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="clear" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>clear</span><a href="#clear" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="clear.clear-1">clear<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#clear.clear-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Clears current isolation.</p>
+<div class="tsd-comment tsd-typography"><p>Clears the current isolation.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>source: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h5>source: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The source of the isolation clearing operation.</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L151">src/helpers/isolation.ts:151</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L196">src/helpers/isolation.ts:196</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="clearReferences" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>clear<wbr/>References</span><a href="#clearReferences" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="clearReferences.clearReferences-1">clear<wbr/>References<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#clearReferences.clearReferences-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Clears all reference objects set for VIMs.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L75">src/helpers/isolation.ts:75</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="current" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>current</span><a href="#current" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="current.current-1">current<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span><a href="#current.current-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="current.current-1">current<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">[]</span><a href="#current.current-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Returns current isolation object array.</p>
+<div class="tsd-comment tsd-typography"><p>Returns the current array of isolated objects.</p>
+
+<h3>Returns</h3><p>The array of objects currently isolated, or undefined if no objects are isolated.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L61">src/helpers/isolation.ts:61</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L91">src/helpers/isolation.ts:91</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Reference</span><a href="#getReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="getReference.getReference-1">get<wbr/>Reference<span class="tsd-signature-symbol">(</span>vim<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vim</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;always&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">&gt;</span><a href="#getReference.getReference-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Retrieves the reference objects set for a given VIM (Viewer Integrated Model).</p>
+
+<h3>Returns</h3><p>The reference objects set for the specified VIM.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>vim: <span class="tsd-signature-type">Vim</span></h5>
+<div class="tsd-comment tsd-typography"><p>The VIM for which reference objects are being retrieved.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">&quot;always&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L68">src/helpers/isolation.ts:68</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="hide" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>hide</span><a href="#hide" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="hide.hide-1">hide<span class="tsd-signature-symbol">(</span>objects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#hide.hide-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="hide.hide-1">hide<span class="tsd-signature-symbol">(</span>objects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">[]</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#hide.hide-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Remove given objects from the isolation set</p>
+<div class="tsd-comment tsd-typography"><p>Removes the given objects from the isolation set.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>objects: <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span></h5></li>
+<h5>objects: <span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>An array of objects to be removed from isolation.</p>
+</div></li>
 <li>
-<h5>source: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h5>source: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The source of the removal operation.</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L123">src/helpers/isolation.ts:123</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L163">src/helpers/isolation.ts:163</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="isolate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>isolate</span><a href="#isolate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="isolate.isolate-1">isolate<span class="tsd-signature-symbol">(</span>objects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#isolate.isolate-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="isolate.isolate-1">isolate<span class="tsd-signature-symbol">(</span>objects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">[]</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#isolate.isolate-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Isolates the objects in the given array and shows the rest.</p>
+<div class="tsd-comment tsd-typography"><p>Isolates the objects in the given array and shows the rest as ghost.</p>
+
+<h3>Returns</h3><p>True if isolation occurs; otherwise, false.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>objects: <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span></h5></li>
+<h5>objects: <span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>An array of objects to isolate.</p>
+</div></li>
 <li>
-<h5>source: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h5>source: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The source of isolation.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L101">src/helpers/isolation.ts:101</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="setReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>set<wbr/>Reference</span><a href="#setReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="setReference.setReference-1">set<wbr/>Reference<span class="tsd-signature-symbol">(</span>vim<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vim</span>, reference<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;always&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#setReference.setReference-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Sets the reference objects for a given VIM (Viewer Integrated Model).</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>vim: <span class="tsd-signature-type">Vim</span></h5>
+<div class="tsd-comment tsd-typography"><p>The VIM for which reference objects are being set.</p>
+</div></li>
+<li>
+<h5>reference: <span class="tsd-signature-type">&quot;always&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>An array of reference objects or the string &#39;always&#39; to indicate permanent reference.</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L68">src/helpers/isolation.ts:68</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L58">src/helpers/isolation.ts:58</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="show" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>show</span><a href="#show" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="show.show-1">show<span class="tsd-signature-symbol">(</span>objects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#show.show-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="show.show-1">show<span class="tsd-signature-symbol">(</span>objects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">[]</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#show.show-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Add given objects to the isolation set</p>
+<div class="tsd-comment tsd-typography"><p>Adds the given objects to the isolation set.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>objects: <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span></h5></li>
+<h5>objects: <span class="tsd-signature-type">IObject</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>An array of objects to be added to isolation.</p>
+</div></li>
 <li>
-<h5>source: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h5>source: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The source of the addition operation.</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L139">src/helpers/isolation.ts:139</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L182">src/helpers/isolation.ts:182</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="toggleIsolation" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>toggle<wbr/>Isolation</span><a href="#toggleIsolation" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -192,10 +269,12 @@
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>source: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h5>source: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The source of isolation.</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/e1a2b7a/src/helpers/isolation.ts#L82">src/helpers/isolation.ts:82</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/vimaec/vim-webgl-component/blob/1e9714a/src/helpers/isolation.ts#L119">src/helpers/isolation.ts:119</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -214,8 +293,14 @@
 <ul>
 <li class="current"><a href="../modules.html">vim-<wbr/>webgl-<wbr/>component</a>
 <ul>
+<li class="tsd-kind-module"><a href="../modules/container.html">container</a></li>
 <li class="tsd-kind-module"><a href="../modules/data.html">data</a></li>
+<li class="tsd-kind-module"><a href="../modules/helpers_element.html">helpers/element</a></li>
 <li class="tsd-kind-module"><a href="../modules/icons.html">icons</a></li>
+<li class="tsd-kind-module"><a href="../modules/panels_logo.html">panels/logo</a></li>
+<li class="tsd-kind-module"><a href="../modules/performance.html">performance</a></li>
+<li class="tsd-kind-module"><a href="../modules/viewerState.html">viewer<wbr/>State</a></li>
+<li class="tsd-kind-module"><a href="../modules/vimComponentRef.html">vim<wbr/>Component<wbr/>Ref</a></li>
 <li class="current tsd-kind-module"><a href="../modules/viw_webgl_component.html">viw-<wbr/>webgl-<wbr/>component</a></li></ul></li></ul></div></details></nav>
 <nav class="tsd-navigation secondary menu-sticky">
 <ul>
@@ -226,9 +311,12 @@
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#any" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>any</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#applySettings" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>apply<wbr/>Settings</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#clear" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>clear</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#clearReferences" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>clear<wbr/>References</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#current" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>current</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#getReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Reference</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#hide" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>hide</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#isolate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>isolate</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#setReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>set<wbr/>Reference</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#show" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>show</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="viw_webgl_component.Isolation.html#toggleIsolation" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>toggle<wbr/>Isolation</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
