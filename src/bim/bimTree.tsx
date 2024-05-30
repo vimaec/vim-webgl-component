@@ -89,7 +89,7 @@ export function BimTree (props: {
 
   // Scroll view so that element is visible, if needed.
   useEffect(() => {
-    if (props.treeData && objects.length === 1) {
+    if (props.treeData && objects.length === 1 && div.current) {
       scrollToSelection(div.current)
       const [first] = props.viewer.selection.objects
       focus.current = props.treeData.getNodeFromElement(first.element)
@@ -136,14 +136,14 @@ export function BimTree (props: {
 
   return (
     <div
-      className="vim-bim-tree vc-mt-2  vc-flex-1 vc-flex vc-w-full vc-min-h-0"
+      className="vim-bim-tree vc-mt-2 vc-flex-1 vc-flex vc-w-full vc-min-h-0"
       ref={div}
       tabIndex={0}
       onFocus={() => (props.viewer.inputs.keyboard.arrowsEnabled = false)}
       onBlur={() => (props.viewer.inputs.keyboard.arrowsEnabled = true)}
     >
       <ControlledTreeEnvironment
-        renderDepthOffset={Math.min(div.current.clientWidth * 0.04, 10)}
+        renderDepthOffset={Math.min((div.current?.clientWidth ?? 0) * 0.04, 10)}
         items={props.treeData.nodes}
 
         getItemTitle={(item) => (item as VimTreeNode).title}

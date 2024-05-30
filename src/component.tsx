@@ -12,7 +12,7 @@ import * as VIM from 'vim-webgl-viewer/'
 import { AxesPanelMemo } from './panels/axesPanel'
 import { ControlBar, RestOfScreen } from './controlbar/controlBar'
 import { LoadingBoxMemo, MsgInfo, ComponentLoader } from './panels/loading'
-import { OptionalBimPanel } from './bim/bimPanel'
+import { BimPanel } from './bim/bimPanel'
 import {
   contextMenuCustomization,
   showContextMenu,
@@ -37,7 +37,7 @@ import { useViewerState } from './viewerState'
 import { LogoMemo } from './panels/logo'
 import { VimComponentRef } from './vimComponentRef'
 import { createBimInfoState } from './bim/bimInfoData'
-import { whenTrue } from './helpers/utils'
+import { whenSomeTrue, whenTrue } from './helpers/utils'
 
 export * as VIM from 'vim-webgl-viewer/'
 export const THREE = VIM.THREE
@@ -160,16 +160,21 @@ export function VimComponent (props: {
 
   const sidePanel = () => (
     <>
-      <OptionalBimPanel
-        viewer={props.viewer}
-        camera={camera}
-        viewerState={viewerState}
-        visible={side.getContent() === 'bim'}
-        isolation={isolation}
-        treeRef={treeRef}
-        settings={settings.value}
-        bimInfoRef={bimInfoRef}
-      />
+    {whenSomeTrue([
+      props.settings.ui.bimTreePanel,
+      props.settings.ui.bimInfoPanel
+    ],
+      <BimPanel
+      viewer={props.viewer}
+      camera={camera}
+      viewerState={viewerState}
+      visible={side.getContent() === 'bim'}
+      isolation={isolation}
+      treeRef={treeRef}
+      settings={settings.value}
+      bimInfoRef={bimInfoRef}
+    />
+    )}
       <MenuSettings
         visible={side.getContent() === 'settings'}
         viewer={props.viewer}

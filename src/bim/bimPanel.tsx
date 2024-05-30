@@ -17,25 +17,6 @@ import { whenAllTrue, whenTrue } from '../helpers/utils'
 import { BimInfoPanel } from './bimInfoPanel'
 import { BimInfoPanelRef } from './bimInfoData'
 
-export function OptionalBimPanel (props: {
-  viewer: VIM.Viewer
-  camera: ComponentCamera
-  viewerState: ViewerState
-  isolation: Isolation
-  visible: boolean
-  settings: ComponentSettings
-  treeRef: React.MutableRefObject<TreeActionRef>
-  bimInfoRef: BimInfoPanelRef
-}) {
-  if (
-    (isFalse(props.settings.ui.bimTreePanel) &&
-     isFalse(props.settings.ui.bimInfoPanel))
-  ) {
-    return null
-  }
-  return React.createElement(BimPanel, props)
-}
-
 /**
  * Returns a jsx component representing most data of a vim object or vim document.
  * @param viewer viewer helper
@@ -105,13 +86,12 @@ export function BimPanel (props: {
 
   const last =
     props.viewerState.selection[props.viewerState.selection.length - 1]
-  const full = isFalse(props.settings.ui.bimInfoPanel)
+  const fullTree = isFalse(props.settings.ui.bimInfoPanel)
+  const fullInfo = isFalse(props.settings.ui.bimTreePanel)
   return (
-    <div className={`vim-bim-panel vc-inset-0 vc-absolute vc-h-full vc-w-full ${full ? 'full-tree' : ''} ${props.visible ? '' : 'vc-hidden'}`}>
-      {isFalse(props.settings.ui.bimTreePanel)
-        ? null
-        : (
-        <div className={`vim-bim-upper vc-flex vc-flex-col vc-absolute vc-w-full ${full ? 'vc-h-full' : 'vc-h-[49%]'} ${props.viewerState.elements.length > 0 ? '' : 'vc-hidden'}`}>
+    <div className={`vim-bim-panel vc-inset-0 vc-absolute vc-h-full vc-w-full ${fullTree ? 'full-tree' : ''} ${props.visible ? '' : 'vc-hidden'}`}>
+      {whenTrue(props.settings.ui.bimTreePanel,
+        <div className={`vim-bim-upper vc-flex vc-flex-col vc-absolute vc-w-full ${fullTree ? 'vc-h-full' : 'vc-h-[49%]'} ${props.viewerState.elements.length > 0 ? '' : 'vc-hidden'}`}>
           <h2
             className="vim-bim-upper-title vc-title vc-text-xs vc-font-bold vc-uppercase">
             Project Inspector
@@ -122,16 +102,16 @@ export function BimPanel (props: {
             setFilter={setFilter}
             count={filteredElements?.length}
           />
-            <BimTree
-              actionRef={props.treeRef}
-              viewer={props.viewer}
-              camera={props.camera}
-              objects={props.viewerState.selection}
-              isolation={props.isolation}
-              treeData={tree}
-            />
-          </div>
-          )}
+          <BimTree
+            actionRef={props.treeRef}
+            viewer={props.viewer}
+            camera={props.camera}
+            objects={props.viewerState.selection}
+            isolation={props.isolation}
+            treeData={tree}
+          />
+        </div>
+      )}
       {
         // Divider if needed.
         whenAllTrue([
@@ -143,15 +123,15 @@ export function BimPanel (props: {
       }
 
       {whenTrue(props.settings.ui.bimInfoPanel,
-        <div className='vim-bim-lower-container vc-absolute vc-top-[50%] vc-bottom-0 vc-bottom vc-left-0 vc-right-0'>
-            <BimInfoPanel
-              object={last}
-              vim={props.viewerState.vim}
-              elements={filteredElements}
-              full={isFalse(props.settings.ui.bimTreePanel)}
-              bimInfoRef={props.bimInfoRef}
-            />
-          </div>)}
+        <div className={`vim-bim-lower-container vc-absolute ${fullInfo ? 'vc-top-0' : 'vc-top-[50%]'} vc-bottom-0 vc-bottom vc-left-0 vc-right-0`}>
+          <BimInfoPanel
+            object={last}
+            vim={props.viewerState.vim}
+            elements={filteredElements}
+            full={isFalse(props.settings.ui.bimTreePanel)}
+            bimInfoRef={props.bimInfoRef}
+          />
+        </div>)}
     </div>
   )
 }
