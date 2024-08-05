@@ -42,7 +42,7 @@
      
       demo()
       async function demo () {
-          await cmp = VIMReact.createVimComponent(
+          const cmp = await VIMReact.createVimComponent(
             undefined,
             VIMReact.getLocalSettings(),
             VIMReact.VIM.getViewerSettingsFromUrl(window.location.search)
