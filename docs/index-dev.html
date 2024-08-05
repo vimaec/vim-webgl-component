@@ -40,14 +40,14 @@
         ? params.get('vim')
         : null
      
-      VIMReact.createVimComponent(
-        loadVim,
-        undefined,
-        VIMReact.getLocalSettings(),
-        VIMReact.VIM.getViewerSettingsFromUrl(window.location.search)
-      )
-      
-      async function loadVim (cmp) {
+      demo()
+      async function demo () {
+          await cmp = VIMReact.createVimComponent(
+            undefined,
+            VIMReact.getLocalSettings(),
+            VIMReact.VIM.getViewerSettingsFromUrl(window.location.search)
+          )
+
         const time = Date.now()
         const vim = await cmp.loader.open(
           url ?? 'https://vim02.azureedge.net/samples/residence.v1.2.75.vim',
@@ -56,8 +56,6 @@
             rotation: new VIMReact.THREE.Vector3(270, 0, 0)
           }
         )
-        vim.loadAll()
-
         console.log(`Loading completed in ${((Date.now() - time)/1000).toFixed(2)} seconds`)
       }
     </script>
