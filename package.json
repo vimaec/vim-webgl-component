@@ -56,7 +56,6 @@
   ],
   "dependencies": {
     "@firefox-devtools/react-contextmenu": "^5.1.0",
-    "jsx": "^0.9.89",
     "re-resizable": "^6.9.9",
     "react-complex-tree": "^2.0.0",
     "react-tooltip": "^4.2.21",
