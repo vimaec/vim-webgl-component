@@ -1,4 +1,4 @@
-name: Build
+name: Build Libs
 
 on:
   pull_request:
